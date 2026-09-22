@@ -57,6 +57,7 @@ main { max-width: 1080px; padding: 72px 40px 32px; text-align: left; align-items
 h1 { margin: 24px 0 22px; }
 h2 { max-width: 400px; font-size: clamp(1.6rem, 3.4vw, 2.25rem); }
 .intro p { margin: 20px 0 28px; }
+.intro .tagline { margin-top: -12px; }
 .hours-sign { border: 1px solid #154174; border-radius: 24px; padding: 12px 34px; background: #060c1b; box-shadow: 0 0 36px #06336f26; }
 .sign-state { padding: 30px 0; }
 .sign-state + .sign-state { border-top: 1px solid #154174; }
