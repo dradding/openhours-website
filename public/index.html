@@ -11,13 +11,32 @@
 </head>
 <body>
   <main>
+    <section class="hero">
+    <div class="intro">
     <img class="app-icon" src="assets/app-icon.png" alt="" width="144" height="144">
     <h1>OpenHours</h1>
     <h2>Business hours for your apps.</h2>
     <p>Choose when your apps are open.<br>Let OpenHours handle closing time.</p>
     <!-- Add the App Store URL as href and remove aria-disabled when ready. -->
     <a class="app-store" role="link" aria-disabled="true">Download on the App Store</a>
-    <a class="support" href="mailto:support@openhours.fyi">support@openhours.fyi</a>
+    </div>
+    <div class="hours-sign" aria-label="How OpenHours works">
+      <div class="sign-state">
+        <strong class="open">OPEN</strong>
+        <p>Your selected apps are available<br>during the hours you choose.</p>
+      </div>
+      <div class="sign-state">
+        <strong class="closed">CLOSED</strong>
+        <p>Outside those hours, OpenHours<br>puts up the closed sign.</p>
+      </div>
+    </div>
+    </section>
+    <section class="how" aria-label="Set up your app hours">
+      <article><span class="step">01</span><h3>Choose your apps.</h3><p>Pick the apps that could use a little structure.</p></article>
+      <article><span class="step">02</span><h3>Set their hours.</h3><p>Make a schedule for weekdays, weekends, or any day. Add as many opening windows as you need.</p></article>
+      <article><span class="step">03</span><h3>Get on with your day.</h3><p>Your hours repeat automatically. Change them whenever your routine changes.</p></article>
+    </section>
+    <footer><a class="support" href="mailto:support@openhours.fyi">support@openhours.fyi</a></footer>
   </main>
 </body>
 </html>

@@ -49,3 +49,34 @@ p { margin: 18px 0 32px; color: #a3afc3; font-size: 1.0625rem; line-height: 1.65
 .support:hover { color: #f5f2ec; }
 a:focus-visible { outline: 3px solid #40afff; outline-offset: 6px; }
 @media (max-width: 380px) { main { padding-inline: 20px; } .app-icon { width: 120px; height: 120px; border-radius: 26px; } }
+/* Keep the landing page compact while making the schedule behavior visible. */
+main { max-width: 1080px; padding: 72px 40px 32px; text-align: left; align-items: stretch; }
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; }
+.intro { display: flex; flex-direction: column; align-items: flex-start; }
+.app-icon { width: 100px; height: 100px; border-radius: 23px; }
+h1 { margin: 24px 0 22px; }
+h2 { max-width: 400px; font-size: clamp(1.6rem, 3.4vw, 2.25rem); }
+.intro p { margin: 20px 0 28px; }
+.hours-sign { border: 1px solid #154174; border-radius: 24px; padding: 12px 34px; background: #060c1b; box-shadow: 0 0 36px #06336f26; }
+.sign-state { padding: 30px 0; }
+.sign-state + .sign-state { border-top: 1px solid #154174; }
+.sign-state strong { font-size: clamp(2.5rem, 5vw, 3.4rem); line-height: 1; font-weight: 300; font-style: italic; letter-spacing: -.03em; }
+.open { color: #4dff6e; text-shadow: 0 0 18px #16ff3340; }
+.closed { color: #ff795f; text-shadow: 0 0 18px #ff372640; }
+.sign-state p { margin: 16px 0 0; font-size: 1rem; }
+.how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 70px; padding-top: 32px; border-top: 1px solid #154174; }
+.step { color: #40afff; font: .875rem ui-monospace, monospace; }
+h3 { font-size: 1.125rem; font-weight: 500; line-height: 1.4; margin: 14px 0 8px; letter-spacing: -.02em; }
+.how p { font-size: .9375rem; margin: 0; }
+footer { padding-top: 42px; text-align: center; }
+.support { display: inline-block; margin: 0; }
+@media (max-width: 700px) {
+  main { padding: 40px 24px 28px; }
+  .hero { grid-template-columns: 1fr; gap: 36px; }
+  .intro { align-items: center; text-align: center; }
+  .hours-sign { max-width: 440px; width: 100%; margin: auto; padding: 0 28px; }
+  .sign-state { padding: 26px 0; }
+  .sign-state p br { display: none; }
+  .how { grid-template-columns: 1fr; gap: 28px; margin-top: 40px; }
+  h3 { margin-top: 8px; }
+}
